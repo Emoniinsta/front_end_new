@@ -1,0 +1,60 @@
+body {
+    /* overflow: hidden; */
+}
+h2 {
+    color: white;
+    float: left;
+}
+.pageContainer {
+    display: flex;
+    overflow: auto;
+}
+.main {
+    height: 95vh;
+    display: flex;
+    width: calc(100% - 350px);
+    left: 350px;
+    position: relative;
+    margin-top: 5%;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 48px !important;
+    color:black
+}
+.searchBarContainer input{
+    position: absolute;
+    margin-top: 20px;
+    left: 800px;
+    float: left;
+    width: 20%;
+    align-items: center;
+    z-index: 1;
+}
+.genreContainer {
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns: repeat(6, 30%);
+    grid-template-rows: repeat(21, 25%);
+    row-gap: 2.5%;
+    column-gap: 2.5%;
+    padding-left: 25px;
+}
+.eachGenre {
+    line-height: 150px;
+    border-radius: 1em;
+}
+.sideNav {
+    align-self: flex-start;
+}
+.sliderContainer {
+    margin: 20px auto;
+}
+.eachCard {
+    margin: 10px auto;
+}
+.searchResults {
+    display: inline-block;
+    margin: 25px 25px;
+
+}
